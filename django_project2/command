@@ -1,0 +1,15 @@
+python -m venv myvenv // 가상환경 만들기
+
+source myvenv/Scripts/activate    //가상환경 활성화(myvenv)
+deactivate // 비활성화
+
+pip install django  //  == 2.1.3 버젼 이름 쓰면 그 버전으로 깔림
+
+django-admin startproject thproject    // 프로젝트 만들기
+
+python manage.py runserver   //서버 돌리기
+control + c    //  서버 끄기
+
+python manage.py startapp myapp
+
+1.app 을 만든 뒤에는 setting.py 에 들어가서 INSTALLED_APPS에   'myapp.apps.MyappConfig', 추가 
