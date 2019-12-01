@@ -1,7 +1,9 @@
+<!-- git add home.html
+git commit -m 'second commit'
+git push origin master -->
 <!DOCTYPE html>
 <html>
 <head>
-  {% load staticfiles %}
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
       $(document).ready(function(){
@@ -17,7 +19,7 @@
     
     </script>
     <style>
-    .a{
+.a{
   margin: auto;
   display: table;
   height: 250px;
@@ -31,9 +33,9 @@
 } 
 .header{
  display: inline-block;
- height: 220px;
+ height: 180px;
  border: 3px solid red;
- width: 220px;
+ width: 180px;
  
 
 }
@@ -47,14 +49,46 @@
   overflow: hidden;
   width: 200px;
   border:1px solid blue;
-
+  float:left;
+ 
 }
+
 div.item{
 
   margin: 2px 3px;
   padding:10px;
   border: 1px solid black;
 }    
+#about{
+height: 200px;
+border: 3px solid green;
+text-align: center;
+font-size: 1em;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+float:left;
+}
+#thesite{
+  height:190px;
+  text-align: left;
+  font-size: 1em;
+  font-family: inherit;
+  width: 800px;
+}
+#aboutme{
+  height: 200px;
+  border: 3px solid powderblue;
+  width:200px;
+  float: left;
+}
+#myname{
+  text-align:center;
+  font-size: 2em;
+
+}
+#mydescription{
+  text-align:center;
+  font-size: 1em;
+}
     </style>
     
     <script>
@@ -82,22 +116,33 @@ div.item{
         </div>
         <div class="header"id="scorpion">
         
-        <!-- </div>
+        </div>
         <div class="header"id="caresheet">
           
-        </div> -->
+        </div> 
     </div>
 </div>
 <div id="logo">
     <h1 id="jjwonderland">JJ.home!</h1>
 </div>
 <div id="sitemenu">
-        <h5>Animals</h5>
         <div class="item">Reptiles</div>
         <div class="item">Ants</div>
         <div class="item">Insects</div>
         <div class="item">Spiders</div>
         <div class="item">Other Arthropods</div>
+        <div class="item">Caresheets</div>
+</div>
+<div id='about'>
+  <div id="thesite">
+    <p>벌목 개미과에 속하는 곤충.
+
+        동물 중 하나의 과(科)로써는 가장 성공적으로 번성하고 있는 종류이다. 정확한 수치는 알 수 없지만 학자들은 전 세계의 개미 수를 모두 합치면 약 10,000,000,000,000,000 ~ 20,000,000,000,000,000(1경 ~ 2경)마리가 된다고 추산한다.[1] 그리고 지구상에 존재하는 개미의 무게를 모두 합하면 지구상에 존재하는 사람의 무게를 모두 합친 것과 비슷하거나 더 무겁다고 한다.</p>
+  </div>
+</div>
+<div id='aboutme'>
+  <p id="myname">JJ</p>
+  <p id='mydescription'>I am a boy. I am Korean.</p>
 </div>
 </body>
 </html>
